@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+</head>
+
+<body >
+  
+
+  
+<nav class=" bg-white p-5 md:flex md:items-center md:justify-between ">
+        <div class="flex justify-between items-center">
+          <span class=" text-2xl font -[Poppins] cursor-pointer ">
+            <img class="h-10 inline " src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg ">
+              Tailwind Css
+          </span>
+          <span class="text -3xl  cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-5">
+            <a  class="text-black "  href="#">HOME</a>
+          </li>
+          <li class="mx-5">
+            <a  class="text-black " href="#">SERVICE</a>
+          </li>
+          <li class="mx-5">
+            <a class="text-black " href="#">ABOUT</a>
+          </li>
+          <li class="mx-5">
+            <a class="text-black " href="#">CONTACTS</a>
+          </li>
+          <li class="mx-5">
+            <a class="text-black" href="#">PROJECTS</a>
+          </li>
+
+          <button class=" uppercase text-white hover:text-black bg-sky-600 font-[Poppins] px-6 py-2 mx-4 hover:bg-gray-600 rounded-xl">
+           get start
+          </button>
+        </ul>
+</nav>
+<script>
+  function Menu(e){
+    let list = document.querySelector('ul');
+    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+  }
+</script>
+<div class="  dark:bg-slate-800  grid place-content-center ">
+
+ <h1 class="text-white font-semibold text-center p-3 "> CARD IN TAILWIND CSS</h1>  
+   
+        <div class="">
+          <div class="p-6 max-w-sm mx-auto  bg-white rounded-xl flex items-center spa">
+            <div>
+                <img  class="h-30 w-20"    src=" https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png">
+            </div>
+              <div>
+                   <div class=" text-2xl font-medium text-slate-800">
+                    Tailwind css
+                    <p class="text-slate-800 text-base "> by aman kumar chhari</p>
+                   </div>
+              </div>
+          </div>
+    </div>
+
+    
+    <div class="">
+        <div class=" mt-5  p-6 max-w-sm mx-auto  bg-white rounded-xl ">
+          <div>
+              <img  class="h-60 w-30"    src=" https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png">
+          </div>
+            <div>
+                 <div class=" text-2xl font-medium">
+                  Tailwind css
+                  <p class="text-slate-500 text-base ">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo optio, dolor voluptas magni quasi possimus quas autem exercitationem et, incidunt veritatis. Recusandae alias quis repellat veniam fugiat voluptate doloremque tempore.</p>
+                 </div>
+            </div>
+        </div>
+  </div>
+
+  <h1 class="text-white font-semibold text-center p-2 "> BUTTON IN TAILWIND CSS</h1>  
+  <button class= "  px-6 py-2 mx-4 bg-sky-200 text-centre mt-3  text-black text-base p-2 rounded-lg hover:bg-black hover:text-white dark:bg-red-500">
+   buy now 
+  </button>
+  
+   
+ <h1 class="text-white font-semibold text-center p-3 "> RESPONSIVE DESGIN IN TAILWIND CSS</h1>  
+   
+  <div class="text-centre my-4">
+    <p class="text-white md:text-green-300 sm:text-red-700 "> Lorem ipsum dolor sit amet
+        
+    </p>
+    
+  </div>
+ 
+
+  <h1 class="text-white font-semibold text-center p-3 "> RESPONSIVE CARD DESGIN (moblie first approch) IN TAILWIND CSS</h1>  
+
+  <div class="mb-6">
+      <div class="max-w-sm mx-auto bg-white rounded-2xl md:max-w-2xl overflow-auto">
+        <div class="md:flex">
+        <div>  
+             <img  class="h-108 w-98 object-cover"   src="  https://images.pexels.com/photos/170809/pexels-photo-170809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">      </div>
+        <div class="p-5">
+            <p class="hover:text-blue-700"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fuga eum illo ducimus tempore, ut alias inventore accusamus voluptatibus nulla. Aliquam corporis mollitia quasi in facilis doloribus a ipsam molestiae? </p>   
+        </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<footer >
+     <div class="p-10  bg-white text-black ">
+          <div class="max w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-2">
+                  <div class="mb-5"> 
+                    <h4>Company</h4>
+                    Lorem ipsum, dolor sit amet <br>
+                    consectetur adipisicing elit. <br>
+                    Ipsa nihil, iusto amet quia maiores <br> <br>
+                    <strong>Phone:</strong>278633326789 <br>
+                    <strong>email:</strong>abc@gmail.com <br>
+                    
+                  </div>
+                  <div class="mb-5"> 
+                    <h4> use links </h4>
+                    <ul>
+                         <li>home</li>
+                         <li>about us </li>
+                         <li>serices</li>
+                         <li>terms of Servies</li>
+                         <li>privary policy</li>
+                    </ul>
+                  </div>
+                  <div class="mb-5">
+                    <h4> our services </h4>
+                    <ul>
+                         <li>web design</li>
+                         <li>web development</li>
+                         <li>product management</li>
+                         <li>marking</li>
+                         <li>garphic design</li>
+                    </ul>
+                  </div>
+                  <div class="mb-5">
+                    <h4> join our newsletter </h4>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias et labore quasi quibusdam ducimus sequi ut soluta porro. Suscipit nostrum qui adipisci quod accusamus, nemo totam alias ipsa minus asperiores? </p>
+                   
+                  </div>
+            </div>
+          </div>
+     </div>
+</footer>
+
+
+
+</body>
+</html>
